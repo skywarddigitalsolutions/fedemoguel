@@ -3,15 +3,12 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className="relative bg-negro h-screen flex flex-col justify-center items-center">
-      {/* Gradiente rojo detrás de la imagen */}
-      <div className="absolute inset-0 w-full h-full flex justify-center items-center">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-rojo"></div>
-      </div>
+     
 
       {/* Imagen de Fede */}
       <div className="relative z-10">
         <Image
-          src="/fede-removebg-preview.png" // Asegúrate de que la imagen esté en la carpeta public
+          src="/federojo.png" // Asegúrate de que la imagen esté en la carpeta public
           alt="Fede Moguel"
           height={400}
           width={450}
@@ -20,7 +17,7 @@ export default function Hero() {
       </div>
 
       {/* Contenedor de texto con fondo blur */}
-      <div className="mt-6 z-20 backdrop-blur-lg bg-white bg-opacity-10 px-8 py-4 rounded-lg text-center border border-blanco">
+      <div className=" mx-2 mt-6 z-20 backdrop-blur-lg bg-black bg-opacity-70 px-8 py-4 rounded-lg text-center border border-blanco">
         <h1 className="text-blanco text-3xl font-bold mb-2">
           CAMBIA TU CUERPO, MEJORA TU SALUD Y TRANSFORMA TU VIDA
         </h1>
