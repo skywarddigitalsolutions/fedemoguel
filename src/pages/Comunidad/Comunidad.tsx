@@ -5,7 +5,7 @@ import { Stat } from "@/components/Stat";
 
 export default function Comunidad() {
   return (
-    <div className="bg-background_color text-white p-8 rounded-lg">
+    <div className="bg-background_color text-white p-8 rounded-lg mb-24">
       <SubtitleSections
         title={"Comunidad"}
         Icon={ BicepsFlexed }

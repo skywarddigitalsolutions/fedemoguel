@@ -6,7 +6,8 @@ import { User } from "lucide-react";
 
 const Clientes = () => {
   return (
-    <div className="h-screen p-8 rounded-lg">
+    <>
+    <div className="min-h-screen p-8 rounded-lg pb-24">
       <div className="mb-4 mt-10">
           <SubtitleSections title={"Testimonios"} Icon={ User } />
           <TitleSections title={"Experiencia de mis clientes"} />
@@ -24,11 +25,11 @@ const Clientes = () => {
 
       <div className="p-4 border rounded-3xl bg-background_color  border-background_color px-4 flex flex-col gap-10 items-center justify-center">
         <Compare
-          firstImage="/img/Fede.webp"
-          secondImage="/img/Fede2.jpeg"
+          firstImage="/img/cambio1.png"
+          secondImage="/img/cambio2.png"
           firstImageClassName="object-cover object-left-top"
           secondImageClassname="object-cover object-left-top"
-          className="h-[250px] w-[20rem] md:h-[500px] md:w-[20rem]"
+          className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem]"
           slideMode="hover"
         />
 
@@ -38,11 +39,11 @@ const Clientes = () => {
         </p>
 
         <Compare
-          firstImage="/img/Fede.webp"
-          secondImage="/img/Fede2.jpeg"
+          firstImage="/img/cambio3.png"
+          secondImage="/img/cambio4.png"
           firstImageClassName="object-cover object-left-top"
           secondImageClassname="object-cover object-left-top"
-          className="h-[250px] w-[20rem] md:h-[500px] md:w-[20rem]"
+          className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem]"
           slideMode="hover"
         />
 
@@ -52,11 +53,11 @@ const Clientes = () => {
         </p>
 
         <Compare
-          firstImage="/img/Fede.webp"
-          secondImage="/img/Fede2.jpeg"
+          firstImage="/img/cambio5.png"
+          secondImage="/img/cambio6.png"
           firstImageClassName="object-cover object-left-top"
           secondImageClassname="object-cover object-left-top"
-          className="h-[250px] w-[20rem] md:h-[500px] md:w-[20rem]"
+          className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem]"
           slideMode="hover"
         />
 
@@ -66,6 +67,7 @@ const Clientes = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 

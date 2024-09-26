@@ -7,14 +7,13 @@ import { Grab } from "lucide-react";
 
 export default function Kickboxing() {
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24">
       \
       <video
         className="absolute w-full h-full object-cover"
         autoPlay
         loop
         muted
-        controls
         playsInline
       >
         <source src="/videos/a.mp4" type="video/mp4" />

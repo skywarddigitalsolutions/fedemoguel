@@ -3,10 +3,10 @@ import { ArrowRight, NotepadText } from "lucide-react";
 import ShinyButton from "../../components/ui/magic/ShinyButton";
 import SubtitleSections from "@/components/text/SubtitleSections";
 import TitleSections from "@/components/text/TitleSections";
-
+import "./Planes.css"
 export default function Planes() {
   return (
-    <div className="bg-background_color text-white p-8 rounded-lg max-w-md">
+    <div className="bg-background_color text-white p-8 rounded-lg max-w-md mb-24" id="Planes">
       <div className="mb-4">
         <SubtitleSections title={"Planes"} Icon={NotepadText} />
         <TitleSections title={"Planes MoguelGym"} />
@@ -15,7 +15,7 @@ export default function Planes() {
         </p>
       </div>
 
-      <ShinyButton className="bg-rojo text-white mb-5">
+      <ShinyButton className="bg-negro text-white mb-5">
         Más información
         <ArrowRight className="w-4 h-4" />
       </ShinyButton>
@@ -46,7 +46,7 @@ function Feature({
   description: string;
 }) {
   return (
-    <div className="bg-rojo bg-opacity-20 p-4 rounded-lg">
+    <div className="cuadrado flex flex-col px-5 py-4">
       <h3 className="font-semibold mb-1">{title}</h3>
       <p className="text-sm text-zinc-300">{description}</p>
     </div>
