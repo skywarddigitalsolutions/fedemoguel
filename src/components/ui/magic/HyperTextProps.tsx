@@ -32,46 +32,70 @@ export default function HyperText({
   const [trigger, setTrigger] = useState(false);
   const interations = useRef(0);
   const isFirstRender = useRef(true);
+  const elementRef = useRef<HTMLDivElement>(null);
 
+  // Función que activa la animación
   const triggerAnimation = () => {
     interations.current = 0;
     setTrigger(true);
   };
 
+  // Uso del Intersection Observer
   useEffect(() => {
-    const interval = setInterval(
-      () => {
-        if (!animateOnLoad && isFirstRender.current) {
-          clearInterval(interval);
-          isFirstRender.current = false;
-          return;
-        }
-        if (interations.current < text.length) {
-          setDisplayText((t) =>
-            t.map((l, i) =>
-              l === " "
-                ? l
-                : i <= interations.current
-                  ? text[i]
-                  : alphabets[getRandomInt(26)],
-            ),
-          );
-          interations.current = interations.current + 0.1;
-        } else {
-          setTrigger(false);
-          clearInterval(interval);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry.isIntersecting) {
+          triggerAnimation();
         }
       },
-      duration / (text.length * 10),
+      {
+        threshold: 0.5,
+      }
     );
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => {
+      if (elementRef.current) {
+        observer.unobserve(elementRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!animateOnLoad && isFirstRender.current) {
+        clearInterval(interval);
+        isFirstRender.current = false;
+        return;
+      }
+      if (interations.current < text.length) {
+        setDisplayText((t) =>
+          t.map((l, i) =>
+            l === " "
+              ? l
+              : i <= interations.current
+              ? text[i]
+              : alphabets[getRandomInt(26)]
+          )
+        );
+        interations.current = interations.current + 0.1;
+      } else {
+        setTrigger(false);
+        clearInterval(interval);
+      }
+    }, duration / (text.length * 10));
     // Clean up interval on unmount
     return () => clearInterval(interval);
   }, [text, duration, trigger, animateOnLoad]);
 
   return (
     <div
+      ref={elementRef} // Asignar la referencia al elemento contenedor
       className="overflow-hidden py-2 flex cursor-default scale-100"
-      onMouseEnter={triggerAnimation}
     >
       <AnimatePresence mode="wait">
         {displayText.map((letter, i) => (
