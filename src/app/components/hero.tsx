@@ -2,6 +2,8 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Fede from "../../../public/img/fede-removebg-preview.png";
+import { Check} from 'lucide-react';
+
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,7 +13,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative min-h-screen mb-12 w-full overflow-hidden bg-gradient-to-b from-background_color via-red-900 to-background_color">
+    <div className="relative min-h-screen mb-12 w-full overflow-hidden bg-gradient-to-b from-background_color via-bordo to-background_color">
       <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-center min-h-screen">
         
         <div className="md:w-1/2 md:mb-0">
@@ -35,10 +37,8 @@ export default function Hero() {
             </p>
             <ul className="mb-6 space-y-2">
               {['Programas personalizados', 'Entrenamiento en línea', 'Asesoría nutricional'].map((item, index) => (
-                <li key={index} className="flex items-center">
-                  <svg className="w-5 h-5 mr-2 text-red-500" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
+                <li key={index} className="flex items-center gap-2">
+                  <Check className='w-5 h-5 text-rojo' />
                   {item}
                 </li>
               ))}

@@ -20,7 +20,7 @@ export default function Planes() {
         <ArrowRight className="w-4 h-4" />
       </ShinyButton>
 
-      <div className="space-y-4">
+      <div className="space-y-4 mt-12">
         <Feature
           title="Plan de entrenamiento personalizado"
           description="Diseñado a tu medida, teniendo en cuenta tus necesidades, gustos y objetivos."
