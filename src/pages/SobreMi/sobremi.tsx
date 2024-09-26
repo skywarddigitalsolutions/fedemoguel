@@ -6,7 +6,7 @@ import { GiBoxingGlove } from 'react-icons/gi';
 
 const SobreMi = () => {
   return (
-    <section className="p-8 bg-background_color rounded-lg shadow-lg mb-24">
+    <section className="p-8 bg-background_color rounded-lg shadow-lg mb-24" id="sobremi">
       <SubtitleSections title={"Sobre Mi"} Icon={PersonStanding} />
 
       <div className="flex flex-colmy-6">
