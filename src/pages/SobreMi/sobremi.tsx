@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import profilePic from "../../../public/img/SobreMi.jpeg";
 import SubtitleSections from "@/components/text/SubtitleSections";
@@ -15,6 +14,8 @@ export default function SobreMi() {
           src={profilePic}
           alt="Fede Moguel"
           className="rounded-lg w-[auto] h-96 mb-12"
+          width={300}
+          height={400}
         />
       </div>
 
