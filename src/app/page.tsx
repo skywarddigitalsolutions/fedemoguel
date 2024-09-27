@@ -5,8 +5,8 @@ import Comunidad from "@/pages/Comunidad/Comunidad";
 import Kickboxing from "@/pages/Kickboxing/Kickboxing";
 import Planes from "@/pages/Planes/Planes";
 import Footer from "@/components/Footer";
+import Cta from "@/pages/CTA/Cta";
 import SobreMi from "@/pages/SobreMi/SobreMi";
-import CTA from "@/pages/CTA/Cta";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <SobreMi />
       <Planes />
       <Kickboxing />
-      <CTA />
+      <Cta />
       <Clientes />
       <Footer />
     </>
