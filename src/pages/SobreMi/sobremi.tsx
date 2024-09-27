@@ -10,7 +10,7 @@ export default function SobreMi() {
     <section className="p-8 bg-background_color rounded-lg mb-8" id="Sobremi">
       <SubtitleSections title={"Sobre Mi"} Icon={PersonStanding} />
 
-      <div className="flex flex-colmy-6">
+      <div className="flex flex-col my-6">
         <Image
           src={profilePic}
           alt="Fede Moguel"
