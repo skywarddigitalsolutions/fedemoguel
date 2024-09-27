@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePic from "../../../public/img/fondorojo.png"; // Ajusta la ruta de la imagen
+import profilePic from "../../../public/img/SobreMi.webp"; // Ajusta la ruta de la imagen
 import SubtitleSections from "@/components/text/SubtitleSections";
 import { PersonStanding, Dumbbell, BoxIcon, BookOpen } from "lucide-react";
 import { GiBoxingGlove } from "react-icons/gi";
@@ -7,14 +7,13 @@ const SobreMi = () => {
   return (
     <section className="p-8 bg-background_color rounded-lg mb-8" id="Sobremi">
       <SubtitleSections title={"Sobre Mi"} Icon={PersonStanding} />
-      <div className="flex flex-row items-center my-6">
+      <div className="flex flex-col my-6">
         <Image
           src={profilePic}
-          alt="Perfil de [Nombre del Cliente]"
-          className="rounded-full w-32 h-32 mr-6" // Espacio a la derecha de la imagen
+          alt="Fede Moguel"
+          className="rounded-lg w-[auto] h-96 mb-12" 
           layout="fixed"
         />
-        <h2 className="text-3xl font-bold text-white">Sobre mí</h2>
       </div>
 
       <p className="text-lg text-neutral-200 leading-relaxed mb-4">
