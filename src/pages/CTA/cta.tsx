@@ -1,6 +1,6 @@
 import { Calendar } from 'lucide-react'
 
-export default function CTASection() {
+export default function CTA() {
 
   const scheduleUrl = "https://api.whatsapp.com/message/3NUS6AKPOGW4K1?autoload=1&app_absent=0"
 
