@@ -5,20 +5,20 @@ import Comunidad from "@/pages/Comunidad/Comunidad";
 import Kickboxing from "@/pages/Kickboxing/Kickboxing";
 import Planes from "@/pages/Planes/Planes";
 import Footer from "@/components/Footer";
-/* import Cta from "@/pages/CTA/Cta";
+import Cta from "@/pages/CTA/Cta";
 import SobreMi from "@/pages/SobreMi/SobreMi";
- */
+
 export default function Home() {
   return (
     <>
       <NavBar />
       <Hero />
       <Comunidad />
-{/*       <SobreMi /> */}
+      <SobreMi />
       <Planes />
       <Kickboxing />
-{/*       <Cta />
- */}      <Clientes />
+      <Cta />
+      <Clientes />
       <Footer />
     </>
   );

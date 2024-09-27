@@ -1,8 +1,8 @@
-import { Calendar } from 'lucide-react'
+import { Calendar } from "lucide-react";
 
 export default function Cta() {
-
-  const scheduleUrl = "https://api.whatsapp.com/message/3NUS6AKPOGW4K1?autoload=1&app_absent=0"
+  const scheduleUrl =
+    "https://api.whatsapp.com/message/3NUS6AKPOGW4K1?autoload=1&app_absent=0";
 
   return (
     <section className="bg-background_color pt-8 px-4">
@@ -12,7 +12,8 @@ export default function Cta() {
             ¿Listo para transformar tu cuerpo y tu vida?
           </h2>
           <p className="text-lg md:text-xl mb-8 text-center">
-            Agenda una consulta gratuita y comencemos tu viaje hacia una mejor versión de ti mismo.
+            Agenda una consulta gratuita y comencemos tu viaje hacia una mejor
+            versión de ti mismo.
           </p>
           <div className="flex justify-center">
             <a
@@ -28,5 +29,5 @@ export default function Cta() {
         </div>
       </div>
     </section>
-  )
+  );
 }
