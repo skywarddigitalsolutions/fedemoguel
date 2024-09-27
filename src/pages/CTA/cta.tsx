@@ -5,9 +5,9 @@ export default function CTASection() {
   const scheduleUrl = "https://api.whatsapp.com/message/3NUS6AKPOGW4K1?autoload=1&app_absent=0"
 
   return (
-    <section className="bg-background_color py-20 px-4">
+    <section className="bg-background_color pt-8 px-4">
       <div className="container mx-auto max-w-4xl">
-        <div className="bg-negro bg-opacity-50 backdrop-filter backdrop-blur-2xl rounded-lg p-8 text-white shadow-2xl transition-all duration-300 hover:shadow-3xl">
+        <div className="bg-negro bg-opacity-50 backdrop-filter backdrop-blur-2xl rounded-lg p-8 text-white transition-all duration-300 hover:shadow-3xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
             ¿Listo para transformar tu cuerpo y tu vida?
           </h2>

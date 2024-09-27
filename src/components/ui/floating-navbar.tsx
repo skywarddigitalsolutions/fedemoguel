@@ -71,7 +71,7 @@ export const FloatingNav = ({
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
-                "relative items-center flex text-lg font-medium text-white hover:text-neutral-300" 
+                "relative items-center flex text-xs text-white hover:text-neutral-300 font-bold" 
               )}
             >
               <span className="block">{navItem.name}</span>

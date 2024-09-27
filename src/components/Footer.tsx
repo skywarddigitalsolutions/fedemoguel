@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react';
-import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 import { motion } from 'framer-motion';
 
@@ -25,7 +25,7 @@ export default function Footer() {
           className="text-center mb-12"
         >
           <h5 className="text-5xl font-bold mb-4">MoguelGym</h5>
-          <div className="w-24 h-1 bg-white mx-auto mb-4"></div>
+          <div className="w-24 h-1 bg-rojo mx-auto mb-4"></div>
         </motion.div>
 
         <motion.div 

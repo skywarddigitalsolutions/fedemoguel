@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { FloatingNav } from "./ui/floating-navbar";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 export function NavBar() {
   const navItems = [
     {
@@ -9,13 +8,21 @@ export function NavBar() {
       link: "#",
     },
     {
-      name: "Planes",
-      link: "#Planes",
+      name: "Comunidad",
+      link: "#Comunidad",
     },
     {
       name: "Sobre mi",
       link: "#Sobremi",
      
+    },
+    {
+      name: "Planes",
+      link: "#Planes",
+    },
+    {
+      name: "Kickboxing",
+      link: "#Kickboxing",
     },
   ];
   return (

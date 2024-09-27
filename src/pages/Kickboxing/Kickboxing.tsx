@@ -7,7 +7,7 @@ import { Grab } from "lucide-react";
 
 export default function Kickboxing() {
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24" id="Kickboxing">
       \
       <video
         className="absolute w-full h-full object-cover"
@@ -49,7 +49,7 @@ export default function Kickboxing() {
                 Descripción breve del programa y sus beneficios para el
                 kickboxer.
               </p>
-              <ShinyButton className=" bg-rojo hover:bg-bordo">
+              <ShinyButton className="bg-rojo hover:bg-bordo">
                 Más información
               </ShinyButton>
             </div>
