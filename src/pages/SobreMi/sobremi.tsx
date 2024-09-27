@@ -1,10 +1,11 @@
+
 import Image from "next/image";
 import profilePic from "../../../public/img/SobreMi.jpeg";
 import SubtitleSections from "@/components/text/SubtitleSections";
 import { PersonStanding, Dumbbell, BookOpen } from "lucide-react";
 import { GiBoxingGlove } from "react-icons/gi";
 
-const SobreMi = () => {
+export default function SobreMi() {
   return (
     <section className="p-8 bg-background_color rounded-lg mb-8" id="Sobremi">
       <SubtitleSections title={"Sobre Mi"} Icon={PersonStanding} />
@@ -54,5 +55,3 @@ const SobreMi = () => {
     </section>
   );
 };
-
-export default SobreMi;
