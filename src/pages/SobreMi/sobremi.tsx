@@ -1,11 +1,11 @@
-import Image from 'next/image';
-import profilePic from '../../../public/img/fondorojo.png'; // Ajusta la ruta de la imagen
-import SubtitleSections from '@/components/text/SubtitleSections';
-import { PersonStanding, Dumbbell, BoxIcon, BookOpen } from 'lucide-react';
-import { GiBoxingGlove } from 'react-icons/gi';
+import Image from "next/image";
+import profilePic from "../../../public/img/fondorojo.png"; // Ajusta la ruta de la imagen
+import SubtitleSections from "@/components/text/SubtitleSections";
+import { PersonStanding, Dumbbell, BoxIcon, BookOpen } from "lucide-react";
+import { GiBoxingGlove } from "react-icons/gi";
 const SobreMi = () => {
   return (
-    <section className="p-8 bg-background_color rounded-lg shadow-lg mb-24">
+    <section className="p-8 bg-background_color rounded-lg mb-8" id="Sobremi">
       <SubtitleSections title={"Sobre Mi"} Icon={PersonStanding} />
       <div className="flex flex-row items-center my-6">
         <Image
@@ -16,34 +16,41 @@ const SobreMi = () => {
         />
         <h2 className="text-3xl font-bold text-white">Sobre mí</h2>
       </div>
-      
+
       <p className="text-lg text-neutral-200 leading-relaxed mb-4">
-        Desde pequeño, enfrenté desafíos con mi cuerpo. A los 12 años, decidí hacer un cambio y comencé a practicar deportes. Ese momento se convirtió en un punto de inflexión en mi vida.
+        Desde muy chico, enfrenté{" "}
+        <span className="text-rojo font-bold">
+          retos físicos que me impulsaron a hacer un cambio
+        </span>{" "}
+        a los 12 años, comenzando con la práctica de deportes. A los 15,
+        descubrí el kickboxing y, aunque no tenía acceso a un gimnasio, me
+        entrenaba con lo que tenía a mano, superando cada obstáculo con
+        determinación.
       </p>
       <p className="text-lg text-neutral-200 leading-relaxed mb-4">
-        A los 15 años, descubrí el kickboxing. Sin recursos para un gimnasio, me entrenaba en el parque, haciendo dominadas y desafiándome a mí mismo cada día.
-      </p>
-      <p className="text-lg text-neutral-200 leading-relaxed mb-4">
-        Finalmente, me gradué como profesor de educación física. Hoy, soy un peleador amateur de kickboxing y un apasionado entrenador personal, ayudando a otros a transformar sus cuerpos y autoestima.
+      Hoy, soy personal trainer, peleador amateur de kickboxing y
+        profesor de educación física. Mi misión es ayudar a otros a <span className="text-rojo font-bold">
+        transformar no solo su cuerpo, sino también su confianza y autoestima</span>,
+        tal como lo hice yo.  
       </p>
       {/* Sección de Credenciales con íconos */}
       <div className="mt-12 grid grid-cols-2 gap-8">
-          <li className="flex flex-col text-center items-center text-neutral-200">
-            <Dumbbell className=" text-rojo gap-2 w-auto h-10" /> 
-            <h5 className='mt-5'> Personal Trainer</h5>
-          </li>
-          <li className="flex flex-col text-center items-center text-neutral-200">
-            <BookOpen className=" text-rojo gap-2 w-auto h-10" />  
-            <h5 className='mt-5'> Autor de un Ebook</h5>
-          </li>
-          <li className="flex flex-col text-center items-center text-neutral-200">
-            <PersonStanding className=" text-rojo gap-2 w-auto h-10" />  
-            <h5 className='mt-5'> Profesor de Educación Física</h5>
-          </li>
-          <li className="flex flex-col text-center items-center text-neutral-200">
-            <GiBoxingGlove className=" text-rojo gap-2 w-auto h-10" />
-            <h5 className='mt-5'> Peleador Amateur de KickBoxing</h5>
-          </li>
+        <li className="flex flex-col text-center items-center text-neutral-200">
+          <Dumbbell className=" text-rojo gap-2 w-auto h-10" />
+          <h5 className="mt-5"> Personal Trainer</h5>
+        </li>
+        <li className="flex flex-col text-center items-center text-neutral-200">
+          <BookOpen className=" text-rojo gap-2 w-auto h-10" />
+          <h5 className="mt-5"> Autor de un Ebook</h5>
+        </li>
+        <li className="flex flex-col text-center items-center text-neutral-200">
+          <PersonStanding className=" text-rojo gap-2 w-auto h-10" />
+          <h5 className="mt-5"> Profesor de Educación Física</h5>
+        </li>
+        <li className="flex flex-col text-center items-center text-neutral-200">
+          <GiBoxingGlove className=" text-rojo gap-2 w-auto h-10" />
+          <h5 className="mt-5"> Peleador Amateur de KickBoxing</h5>
+        </li>
       </div>
     </section>
   );

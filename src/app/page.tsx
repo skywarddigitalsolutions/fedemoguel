@@ -5,7 +5,7 @@ import Comunidad from "@/pages/Comunidad/Comunidad";
 import Kickboxing from "@/pages/Kickboxing/Kickboxing";
 import Planes from "@/pages/Planes/Planes";
 import Footer from "@/components/Footer";
-import Cta from "@/pages/CallToAction/CallToAction";
+import Cta from "@/pages/Cta/Cta";
 import SobreMi from "@/pages/SobreMi/sobremi";
 
 export default function Home() {
