@@ -11,7 +11,7 @@ const SobreMi = () => {
         <Image
           src={profilePic}
           alt="Fede Moguel"
-          className="rounded-lg w-[auto] h-96 mb-12" 
+          className="rounded-lg w-[auto] h-96 mb-12"
           layout="fixed"
         />
       </div>
@@ -27,10 +27,13 @@ const SobreMi = () => {
         determinación.
       </p>
       <p className="text-lg text-neutral-200 leading-relaxed mb-4">
-      Hoy, soy personal trainer, peleador amateur de kickboxing y
-        profesor de educación física. Mi misión es ayudar a otros a <span className="text-rojo font-bold">
-        transformar no solo su cuerpo, sino también su confianza y autoestima</span>,
-        tal como lo hice yo.  
+        Hoy, soy personal trainer, peleador amateur de kickboxing y profesor de
+        educación física. Mi misión es ayudar a otros a{" "}
+        <span className="text-rojo font-bold">transformar</span> no solo{" "}
+        <span className="text-rojo font-bold"> su cuerpo </span>, sino también{" "}
+        <span className="text-rojo font-bold"> su confianza </span>y{" "}
+        <span className="text-rojo font-bold"> autoestima</span>, tal como lo
+        hice yo.
       </p>
       {/* Sección de Credenciales con íconos */}
       <div className="mt-12 grid grid-cols-2 gap-8">
