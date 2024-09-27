@@ -97,7 +97,7 @@ export default function HyperText({
       ref={elementRef} // Asignar la referencia al elemento contenedor
       className="overflow-hidden py-2 flex cursor-default scale-100"
     >
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="sync">
         {displayText.map((letter, i) => (
           <motion.h1
             key={i}

@@ -42,7 +42,7 @@ export const FloatingNav = ({
   });
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="sync">
       {visible && (
         <motion.div
           initial={{

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ChevronDown, Home } from "lucide-react";
+import { Home } from "lucide-react";
 import ShinyButton from "@/components/ui/magic/ShinyButton";
 import Fede from "../../../public/img/fede-removebg-preview.png";
 import SubtitleSections from "@/components/text/SubtitleSections";
@@ -25,6 +25,7 @@ export default function Hero() {
           height={300}
           alt="Personal Trainer"
           className="mx-auto rounded-full shadow-lg border-4 border-red-600"
+          priority={true}
         />
 
         <div className="space-y-4 flex flex-col justify-center items-center">
