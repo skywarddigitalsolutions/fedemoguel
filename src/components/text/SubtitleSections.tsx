@@ -12,7 +12,7 @@ const SubtitleSections = ({ title, Icon }: SubtitleSectionsProps) => {
       <HyperText
         className="text-sm font-bold text-blanco"
         text={title}
-        duration={20}
+        duration={40}
         />
       {Icon && <Icon className="text-rojo mx-2" />}
     </div>
