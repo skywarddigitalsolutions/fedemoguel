@@ -1,4 +1,5 @@
 
+import React from "react";
 import Image from "next/image";
 import profilePic from "../../../public/img/SobreMi.jpeg";
 import SubtitleSections from "@/components/text/SubtitleSections";
