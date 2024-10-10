@@ -3,16 +3,16 @@ import { useState } from 'react';
 import { FaFacebookF, FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Footer() {
   const [hoveredIcon, setHoveredIcon] = useState<string | null>(null);
 
   const socialLinks = [
-    { icon: FaFacebookF, href: "#", label: "Facebook" },
-    { icon: FaInstagram, href: "#", label: "Instagram" },
-    { icon: FaYoutube, href: "#", label: "YouTube" },
-    { icon: SiTiktok, href: "#", label: "TikTok" },
-    { icon: FaWhatsapp, href: "#", label: "WhatsApp" },
+    { icon: FaInstagram, href: "https://www.instagram.com/fedemoguel?igsh=MXJ4cG9zOXhqaWpjeg==", label: "Instagram" },
+    { icon: FaYoutube, href: "https://youtube.com/@fedemoguel?si=nbRx2WGhr3D-kd8i", label: "YouTube" },
+    { icon: SiTiktok, href: "https://www.tiktok.com/@fedemoguel?_t=8qPpXF1bOWU&_r=1", label: "TikTok" },
+    { icon: FaWhatsapp, href: "https://wa.link/i36zae", label: "WhatsApp" },
   ];
 
   return (
@@ -64,7 +64,7 @@ export default function Footer() {
           transition={{ delay: 0.4, duration: 0.5 }}
           className="mt-12 text-center text-sm text-gray-400"
         >
-          <p>&copy; {new Date().getFullYear()} Skyward Digital Solutions. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} <Link href={'https://www.sds.com.ar/'} target='_blank' className='font-extrabold'>Skyward Digital Solutions</Link>. Todos los derechos reservados.</p>
         </motion.div>
       </div>
     </footer>

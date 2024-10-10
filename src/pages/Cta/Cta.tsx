@@ -1,5 +1,6 @@
 import React from "react";
 import { Calendar } from "lucide-react";
+import Link from "next/link";
 
 export default function Cta() {
   const scheduleUrl =
@@ -17,15 +18,15 @@ export default function Cta() {
             versión de ti mismo.
           </p>
           <div className="flex justify-center">
-            <a
-              href={scheduleUrl}
+            <Link
+              href={`https://wa.me/5491150611441?text=Hola%20Fede,%20como%20estas?%20Queria%20consultarte%20a%20cerca%20de`}
+              passHref
               target="_blank"
-              rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-full transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
             >
               <Calendar className="w-6 h-6 mr-2" />
               Agendar mi consulta ahora
-            </a>
+            </Link>
           </div>
         </div>
       </div>

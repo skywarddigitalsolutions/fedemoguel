@@ -6,12 +6,12 @@ import { User } from "lucide-react";
 
 const Clientes = () => {
   return (
-    <>
-    <div className="min-h-screen p-8 rounded-lg pb-24">
-      <div className="mb-4 mt-10">
-          <SubtitleSections title={"Testimonios"} Icon={ User } />
-          <TitleSections title={"Experiencia de mis clientes"} />
-        <p className="text-sm text-blanco font-semibold">
+    <div className="min-h-screen bg-background_color text-white p-8 lg:p-16">
+      {/* Section Header */}
+      <div className="mb-8 mt-10 w-full text-left">
+        <SubtitleSections title={"Testimonios"} Icon={User} />
+        <TitleSections title={"Experiencia de mis clientes"} />
+        <p className="text-base lg:text-lg text-zinc-300 font-semibold">
           Nuestro programa no solo{" "}
           <span className="text-rojo font-extrabold">transforma tu cuerpo</span>
           , también{" "}
@@ -23,51 +23,56 @@ const Clientes = () => {
         </p>
       </div>
 
-      <div className="p-4 border rounded-3xl bg-background_color  border-background_color px-4 flex flex-col gap-10 items-center justify-center">
-        <Compare
-          firstImage="/img/cambio1.png"
-          secondImage="/img/cambio2.png"
-          firstImageClassName="object-cover object-left-top"
-          secondImageClassname="object-cover object-left-top"
-          className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem]"
-          slideMode="hover"
-        />
+      {/* Testimonials Section */}
+      <div className="p-4 border rounded-3xl bg-background_color border-background_color flex flex-col gap-10 items-center justify-center">
+      <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
+          <Compare
+            firstImage="/img/cambio1.png"
+            secondImage="/img/cambio2.png"
+            firstImageClassName="object-cover object-left-top"
+            secondImageClassname="object-cover object-left-top"
+            className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
+            slideMode="hover"
+          />
+          <p className="text-white font-medium md:text-left md:w-1/2">
+            "Gracias al programa, mejoré mi físico y recuperé mi confianza. Me
+            siento más fuerte, tanto mental como emocionalmente." – María G.
+          </p>
+        </div>
 
-        <p className="text-white font-medium">
-          "Gracias al programa, mejoré mi físico y recuperé mi confianza. Me
-          siento más fuerte, tanto mental como emocionalmente." – María G.
-        </p>
+        {/* Second Testimonial */}
+        <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
+          <Compare
+            firstImage="/img/cambio3.png"
+            secondImage="/img/cambio4.png"
+            firstImageClassName="object-cover object-left-top"
+            secondImageClassname="object-cover object-left-top"
+            className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
+            slideMode="hover"
+          />
+          <p className="text-white font-medium md:text-left md:w-1/2">
+            "Nunca me había sentido tan bien. Mi energía y autoestima están por
+            las nubes desde que comencé con este entrenamiento." – Juan P.
+          </p>
+        </div>
 
-        <Compare
-          firstImage="/img/cambio3.png"
-          secondImage="/img/cambio4.png"
-          firstImageClassName="object-cover object-left-top"
-          secondImageClassname="object-cover object-left-top"
-          className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem]"
-          slideMode="hover"
-        />
-
-        <p className="text-white font-medium">
-          "Nunca me había sentido tan bien. Mi energía y autoestima están por
-          las nubes desde que comencé con este entrenamiento." – Juan P.
-        </p>
-
-        <Compare
-          firstImage="/img/cambio5.png"
-          secondImage="/img/cambio6.png"
-          firstImageClassName="object-cover object-left-top"
-          secondImageClassname="object-cover object-left-top"
-          className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem]"
-          slideMode="hover"
-        />
-
-        <p className="text-white font-medium">
-          "Este programa cambió mi vida. No solo me veo mejor, también me siento
-          increíblemente fuerte y positivo." – Lucía M.
-        </p>
+        {/* Third Testimonial */}
+        <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
+          <Compare
+            firstImage="/img/cambio5.png"
+            secondImage="/img/cambio6.png"
+            firstImageClassName="object-cover object-left-top"
+            secondImageClassname="object-cover object-left-top"
+            className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
+            slideMode="hover"
+          />
+          <p className="text-white font-medium md:text-left md:w-1/2">
+            "Este programa cambió mi vida. No solo me veo mejor, también me siento
+            increíblemente fuerte y positivo." – Lucía M.
+          </p>
+        </div>
       </div>
     </div>
-    </>
   );
 };
 
