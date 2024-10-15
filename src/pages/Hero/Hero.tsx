@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="w-full space-y-6">
         <SubtitleSections title={"Inicio"} Icon={Home} />
         <div className="text-center lg:text-left">
-          <TitleSections title={"¿Estás listo para cambiar tu vida?"} />
+          <TitleSections title={"¿Listo para desbloquear tu máximo potencial?"} />
           <p className="text-lg lg:text-2xl text-white">
             Entrenamientos personalizados para alcanzar{" "}
             <span className="text-rojo font-extrabold">tu mejor versión</span>.
@@ -21,9 +21,9 @@ export default function Hero() {
           {/* Updated UL section */}
           <ul className="space-y-2 lg:space-y-4 mt-4 flex flex-col items-center lg:items-start">
             {[
-              "Programas personalizados",
-              "Entrenamiento en línea",
-              "Seguimiento nutricional",
+              "Planes online, Entrenamiento + alimentación y MindSet",
+              "Preparacion fisica y nutrición para deportes de combate",
+              "Clases presenciales 1 a 1",
             ].map((item, index) => (
               <li
                 key={index}

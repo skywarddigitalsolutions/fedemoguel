@@ -9,7 +9,7 @@ export default function Comunidad() {
       <SubtitleSections title={"Comunidad"} Icon={BicepsFlexed} />
       
       <div className="flex items-center gap-2 mb-4">
-        <TitleSections title={"Comunidad MoguelGym"} />
+        <TitleSections title={"Comunidad FedeMoguel"} />
       </div>
       
       <p className="mb-6 text-lg lg:text-xl text-white w-full">

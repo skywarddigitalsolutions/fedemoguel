@@ -19,7 +19,7 @@ export default function Planes() {
         <TitleSections title={"Planes MoguelGym"} />
         <p className="text-base lg:text-lg xl:text-xl text-zinc-300">
           Los planes más completos para lograr{" "}
-          <span className="text-rojo font-extrabold">todos tus objetivos</span>
+          <span className="text-rojo font-extrabold">todos tus objetivos.</span>
         </p>
       </div>
 

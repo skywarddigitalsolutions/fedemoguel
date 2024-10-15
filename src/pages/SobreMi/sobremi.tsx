@@ -35,7 +35,7 @@ const SobreMi = () => {
               determinación.
             </p>
             <p className="text-lg lg:text-xl text-neutral-200 leading-relaxed mb-4">
-              Hoy, soy personal trainer, peleador semi-pro de kickboxing y
+              Hoy, soy personal trainer, peleador de kickboxing y
               profesor de educación física. Mi misión es ayudar a otros a{" "}
               <span className="text-rojo font-bold">transformar</span> no solo{" "}
               <span className="text-rojo font-bold"> su cuerpo </span>, sino
@@ -62,7 +62,7 @@ const SobreMi = () => {
             </li>
             <li className="flex flex-col text-center items-center text-neutral-200">
               <GiBoxingGlove className="text-rojo gap-2 w-auto h-10" />
-              <h5 className="mt-5"> Peleador Semi-Pro de KickBoxing</h5>
+              <h5 className="mt-5"> Peleador de KickBoxing</h5>
             </li>
           </div>
         </div>
