@@ -8,7 +8,7 @@ import TitleSections from "@/components/text/TitleSections";
 
 export default function Hero() {
   const features = [
-    "Planes online, Entrenamiento + alimentación y MindSet",
+    "Planes online, Entrenamiento + Alimentación + MindSet",
     "Preparación física y nutrición para deportes de combate",
     "Clases presenciales 1 a 1",
   ];

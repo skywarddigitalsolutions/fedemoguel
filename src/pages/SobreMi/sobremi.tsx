@@ -31,28 +31,28 @@ const SobreMi = () => {
               Cuando era chico era gordito y mi cuerpo no me gustaba, hasta que
               a los 12 años empecé a hacer abdominales y flexiones, y <span className="text-rojo font-extrabold">me enamoré
               perdidamente del ejercicio físico</span>. Con eso elevé mucho mi
-              autoestima y mi vida comenzó a potenciarse.
+              autoestima y mi vida comenzó a <span className="text-rojo font-extrabold">potenciarse</span>.
               
             </p>
             <p className="text-lg lg:text-lg text-neutral-200 leading-relaxed mb-4">
               A los 15 años sufría de ansiedad y como una especie de terapia
-              física empecé Kickboxing, deporte que hago hasta hoy día y del
-              cual soy campeón.
+              física empecé <span className="text-rojo font-extrabold">Kickboxing</span>, deporte que hago hasta hoy día y del
+              cual soy <span className="text-rojo font-extrabold">campeón</span>.
             </p>
 
             <p className="text-lg lg:text-lg text-neutral-200 leading-relaxed mb-4">
               Empecé a trabajar de adolescente de ayudante de pintor, volantero,
               fumigador, delivery y otros trabajos para poder pagar mis
               entrenamientos. En el 2019 ingresé al prestigioso ISEF 2, en donde
-              me recibí de Profesor de Educación física.
+              me recibí de <span className="text-rojo font-extrabold">Profesor de Educación física</span>.
             </p>
 
             <p className="text-lg lg:text-lg text-neutral-200 leading-relaxed mb-4">
               Hoy en día me dedico a entrenar personas y llevarlas a su mejor
               versión física y mental, complementando el fitness y el Kickboxing
-              con mindset y desarrollo personal. Mi misión es hackear tu mente y
+              con mindset y desarrollo personal. <span className="text-rojo font-extrabold">Mi misión es hackear tu mente y
               tu físico para elevar tu nivel de conciencia, confianza y
-              autoestima para que vivas una vida plena
+              autoestima para que vivas una vida plena</span>.
             </p>
           </div>
 

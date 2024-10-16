@@ -46,7 +46,7 @@ export default function Planes() {
       <div className="relative z-10 text-white text-center p-8 lg:p-16 mt-10 lg:h-full">
         <SubtitleSections title={"Planes"} Icon={NotepadText} />
         <TitleSections
-          title={"¿Listo para un entrenamiento ajustado a tus metas?"}
+          title={"¿Estás listo para ser tu mejor versión?"}
         />
         <p className="text-xl sm:text-2xl mb-8">
           Descubre cómo nuestro entrenamiento puede llevarte al siguiente nivel

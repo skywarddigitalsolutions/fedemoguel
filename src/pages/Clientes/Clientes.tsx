@@ -28,124 +28,76 @@ const Clientes = () => {
       </div>
 
       {/* Testimonials Section */}
-      <div className="p-4 border rounded-3xl bg-background_color border-background_color flex flex-col gap-10 items-center justify-center">
+      <div className="p-4 border rounded-3xl bg-background_color border-background_color flex flex-wrap gap-4 justify-center items-center">
 
         {/* Image Carousel Section - visible only on mobile */}
-        <div className="block lg:hidden p-4 border rounded-3xl bg-background_color border-background_color flex flex-col gap-10 items-center justify-center">
+        <div className="lg:hidden p-4 border rounded-3xl bg-background_color border-background_color w-full">
           <ImageCarousel />
         </div>
 
-        {/* Tercera Comparación */}
-        <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
-          <Compare
-            firstImage="/img/cambio13.webp"
-            secondImage="/img/cambio14.webp"
-            firstImageClassName="object-cover object-left-top"
-            secondImageClassname="object-cover object-left-top"
-            className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
-            slideMode="hover"
-          />
-          <p className="text-white font-medium md:text-left md:w-1/2">
-            "Este programa cambió mi vida. No solo me veo mejor, también me
-            siento increíblemente fuerte y positivo." – Lucía M.
-          </p>
-        </div>
-
-        {/* Tercera Comparación */}
-        <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
-          <Compare
-            firstImage="/img/cambio12.webp"
-            secondImage="/img/cambio11.webp"
-            firstImageClassName="object-cover object-left-top"
-            secondImageClassname="object-cover object-left-top"
-            className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
-            slideMode="hover"
-          />
-          <p className="text-white font-medium md:text-left md:w-1/2">
-            "Este programa cambió mi vida. No solo me veo mejor, también me
-            siento increíblemente fuerte y positivo." – Lucía M.
-          </p>
-        </div>
-
-        {/* Tercera Comparación */}
-        <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
-          <Compare
-            firstImage="/img/cambio9.webp"
-            secondImage="/img/cambio10.webp"
-            firstImageClassName="object-cover object-left-top"
-            secondImageClassname="object-cover object-left-top"
-            className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
-            slideMode="hover"
-          />
-          <p className="text-white font-medium md:text-left md:w-1/2">
-            "Este programa cambió mi vida. No solo me veo mejor, también me
-            siento increíblemente fuerte y positivo." – Lucía M.
-          </p>
-        </div>
-
-        {/* Repite la sección de testimonios como está */}
-        <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
-          <Compare
-            firstImage="/img/cambio5.webp"
-            secondImage="/img/cambio6.webp"
-            firstImageClassName="object-cover object-left-top"
-            secondImageClassname="object-cover object-left-top"
-            className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
-            slideMode="hover"
-          />
-          <p className="text-white font-medium md:text-left md:w-1/2">
-            "Este programa cambió mi vida. No solo me veo mejor, también me
-            siento increíblemente fuerte y positivo." – Lucía M.
-          </p>
-        </div>
-
-        <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
-          <Compare
-            firstImage="/img/cambio1.webp"
-            secondImage="/img/cambio2.webp"
-            firstImageClassName="object-cover object-left-top"
-            secondImageClassname="object-cover object-left-top"
-            className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
-            slideMode="hover"
-          />
-          <p className="text-white font-medium md:text-left md:w-1/2">
-            "Gracias al programa, mejoré mi físico y recuperé mi confianza. Me
-            siento más fuerte, tanto mental como emocionalmente." – María G.
-          </p>
-        </div>
-
         {/* Testimonial Comparisons - visible on all screens */}
-        <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
-          <Compare
-            firstImage="/img/cambio3.webp"
-            secondImage="/img/cambio4.webp"
-            firstImageClassName="object-cover object-left-top"
-            secondImageClassname="object-cover object-left-top"
-            className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
-            slideMode="hover"
-          />
-          <p className="text-white font-medium md:text-left md:w-1/2">
-            "Nunca me había sentido tan bien. Mi energía y autoestima están por
-            las nubes desde que comencé con este entrenamiento." – Juan P.
-          </p>
-        </div>
+        <Compare
+          firstImage="/img/cambio13.webp"
+          secondImage="/img/cambio14.webp"
+          firstImageClassName="object-cover object-left-top"
+          secondImageClassname="object-cover object-left-top"
+          className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
+          slideMode="hover"
+        />
 
-        {/* Tercera Comparación */}
-        <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
-          <Compare
-            firstImage="/img/cambio7.webp"
-            secondImage="/img/cambio8.webp"
-            firstImageClassName="object-cover object-left-top"
-            secondImageClassname="object-cover object-left-top"
-            className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
-            slideMode="hover"
-          />
-          <p className="text-white font-medium md:text-left md:w-1/2">
-            "Este programa cambió mi vida. No solo me veo mejor, también me
-            siento increíblemente fuerte y positivo." – Lucía M.
-          </p>
-        </div>
+        <Compare
+          firstImage="/img/cambio12.webp"
+          secondImage="/img/cambio11.webp"
+          firstImageClassName="object-cover object-left-top"
+          secondImageClassname="object-cover object-left-top"
+          className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
+          slideMode="hover"
+        />
 
+        <Compare
+          firstImage="/img/cambio9.webp"
+          secondImage="/img/cambio10.webp"
+          firstImageClassName="object-cover object-left-top"
+          secondImageClassname="object-cover object-left-top"
+          className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
+          slideMode="hover"
+        />
+
+        <Compare
+          firstImage="/img/cambio5.webp"
+          secondImage="/img/cambio6.webp"
+          firstImageClassName="object-cover object-left-top"
+          secondImageClassname="object-cover object-left-top"
+          className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
+          slideMode="hover"
+        />
+
+        <Compare
+          firstImage="/img/cambio1.webp"
+          secondImage="/img/cambio2.webp"
+          firstImageClassName="object-cover object-left-top"
+          secondImageClassname="object-cover object-left-top"
+          className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
+          slideMode="hover"
+        />
+
+        <Compare
+          firstImage="/img/cambio3.webp"
+          secondImage="/img/cambio4.webp"
+          firstImageClassName="object-cover object-left-top"
+          secondImageClassname="object-cover object-left-top"
+          className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
+          slideMode="hover"
+        />
+
+        <Compare
+          firstImage="/img/cambio7.webp"
+          secondImage="/img/cambio8.webp"
+          firstImageClassName="object-cover object-left-top"
+          secondImageClassname="object-cover object-left-top"
+          className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
+          slideMode="hover"
+        />
       </div>
     </div>
   );
