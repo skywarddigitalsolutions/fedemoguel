@@ -52,7 +52,7 @@ const SobreMi = () => {
               versión física y mental, complementando el fitness y el Kickboxing
               con mindset y desarrollo personal. <span className="text-rojo font-extrabold">Mi misión es hackear tu mente y
               tu físico para elevar tu nivel de conciencia, confianza y
-              autoestima para que vivas una vida plena</span>.
+              autoestima con el fin de que vivas una vida plena</span>.
             </p>
           </div>
 

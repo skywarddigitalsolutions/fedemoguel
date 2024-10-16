@@ -10,12 +10,12 @@ export default function Planes() {
     {
       title: "Plan Platinum",
       description:
-        "Para pérdida de grasa y/o ganancia de masa muscular\n Entrenamiento + Alimentación + Seguimiento",
+        "Para pérdida de grasa y/o ganancia de masa muscular\n Entrenamiento + Alimentación + Seguimiento (100% online)",
     },
     {
       title: "Plan Fighter Elite",
       description:
-        "Para deportistas de combate (Muay Thai, Boxeo, Bjj, MMA)\n Preparación física + Nutrición deportiva + Asesoramiento en corte de peso + seguimiento (100% online)",
+        "Para deportistas de combate (Muay Thai, Boxeo, Bjj, MMA)\n Preparación física + Nutrición deportiva + Asesoramiento en corte de peso + Seguimiento (100% online)",
     },
     {
       title: "Plan Gold",
