@@ -6,11 +6,14 @@ import { GiBoxingGlove } from "react-icons/gi";
 
 const SobreMi = () => {
   return (
-    <section className="bg-background_color rounded-lg mb-8 p-8 lg:p-16" id="Sobremi">
+    <section
+      className="bg-background_color rounded-lg mb-8 p-8 lg:p-16"
+      id="Sobremi"
+    >
       <SubtitleSections title={"Sobre Mi"} Icon={PersonStanding} />
 
       {/* Layout para desktop: Imagen y texto en columnas */}
-      <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12 my-6">
+      <div className="flex flex-col lg:flex-row lg:items-start lg:gap-12 my-6">
         {/* Imagen ajustada */}
         <div className="lg:w-1/2">
           <Image
@@ -24,25 +27,32 @@ const SobreMi = () => {
         {/* Texto a la derecha de la imagen en pantallas grandes */}
         <div className="lg:w-1/2">
           <div className="flex flex-col">
-            <p className="text-lg lg:text-xl text-neutral-200 leading-relaxed mb-4">
-              Desde muy chico, enfrenté{" "}
-              <span className="text-rojo font-bold">
-                retos físicos que me impulsaron a hacer un cambio
-              </span>{" "}
-              a los 12 años, comenzando con la práctica de deportes. A los 15,
-              descubrí el kickboxing y, aunque no tenía acceso a un gimnasio, me
-              entrenaba con lo que tenía a mano, superando cada obstáculo con
-              determinación.
+            <p className="text-lg lg:text-lg text-neutral-200 leading-relaxed mb-4">
+              Cuando era chico era gordito y mi cuerpo no me gustaba, hasta que
+              a los 12 años empecé a hacer abdominales y flexiones, y <span className="text-rojo font-extrabold">me enamoré
+              perdidamente del ejercicio físico</span>. Con eso elevé mucho mi
+              autoestima y mi vida comenzó a potenciarse.
+              
             </p>
-            <p className="text-lg lg:text-xl text-neutral-200 leading-relaxed mb-4">
-              Hoy, soy personal trainer, peleador de kickboxing y
-              profesor de educación física. Mi misión es ayudar a otros a{" "}
-              <span className="text-rojo font-bold">transformar</span> no solo{" "}
-              <span className="text-rojo font-bold"> su cuerpo </span>, sino
-              también{" "}
-              <span className="text-rojo font-bold"> su confianza </span>y{" "}
-              <span className="text-rojo font-bold"> autoestima</span>, tal como
-              lo hice yo.
+            <p className="text-lg lg:text-lg text-neutral-200 leading-relaxed mb-4">
+              A los 15 años sufría de ansiedad y como una especie de terapia
+              física empecé Kickboxing, deporte que hago hasta hoy día y del
+              cual soy campeón.
+            </p>
+
+            <p className="text-lg lg:text-lg text-neutral-200 leading-relaxed mb-4">
+              Empecé a trabajar de adolescente de ayudante de pintor, volantero,
+              fumigador, delivery y otros trabajos para poder pagar mis
+              entrenamientos. En el 2019 ingresé al prestigioso ISEF 2, en donde
+              me recibí de Profesor de Educación física.
+            </p>
+
+            <p className="text-lg lg:text-lg text-neutral-200 leading-relaxed mb-4">
+              Hoy en día me dedico a entrenar personas y llevarlas a su mejor
+              versión física y mental, complementando el fitness y el Kickboxing
+              con mindset y desarrollo personal. Mi misión es hackear tu mente y
+              tu físico para elevar tu nivel de conciencia, confianza y
+              autoestima para que vivas una vida plena
             </p>
           </div>
 

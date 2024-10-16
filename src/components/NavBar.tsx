@@ -1,24 +1,34 @@
 "use client";
 import React from "react";
 import { FloatingNav } from "./ui/floating-navbar";
+import { User, BicepsFlexed, PersonStanding, NotepadText, Home } from "lucide-react";
+
 export function NavBar() {
   const navItems = [
     {
-      name: "Comunidad",
+      link: "#",
+      icon: <Home />,
+    },
+    {
       link: "#Comunidad",
+      icon: <BicepsFlexed />,
     },
     {
-      name: "Sobre mi",
       link: "#Sobremi",
-     
+      icon: <PersonStanding />,
     },
     {
-      name: "Planes",
       link: "#Planes",
+      icon: <NotepadText />,
+    },
+    {
+      link: "#Testimonio",
+      icon: <User />,
     }
   ];
+
   return (
-    <div className="relative  w-full">
+    <div className="relative w-full">
       <FloatingNav navItems={navItems} />
     </div>
   );

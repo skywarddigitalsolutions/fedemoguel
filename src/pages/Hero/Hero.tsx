@@ -1,52 +1,39 @@
 import Image from "next/image";
 import { Home } from "lucide-react";
-import Link from "next/link"; // Importa el componente Link de Next.js
+import Link from "next/link";
 import ShinyButton from "@/components/ui/magic/ShinyButton";
-import Fede from "../../../public/img/fede-removebg-preview.png";
+import Fede from "../../../public/img/fede_fondo.webp";
 import SubtitleSections from "@/components/text/SubtitleSections";
 import TitleSections from "@/components/text/TitleSections";
 
 export default function Hero() {
+  const features = [
+    "Planes online, Entrenamiento + alimentación y MindSet",
+    "Preparación física y nutrición para deportes de combate",
+    "Clases presenciales 1 a 1",
+  ];
+
   return (
-    <section className="min-h-screen flex flex-col lg:flex-row lg:items-center bg-background_color p-8 lg:p-16 gap-4">
+    <section className="lg:h-[70vh] flex flex-col lg:flex-row lg:items-start bg-background_color p-8 lg:p-16 gap-4">
       <div className="w-full space-y-6">
-        <SubtitleSections title={"Inicio"} Icon={Home} />
+        <SubtitleSections title="Inicio" Icon={Home} />
+
         <div className="text-center lg:text-left">
-          <TitleSections title={"¿Listo para desbloquear tu máximo potencial?"} />
-          <p className="text-lg lg:text-2xl text-white">
+          <TitleSections title="¿Listo para desbloquear tu máximo potencial?" />
+          <p className="text-lg lg:text-2xl text-white lg:mt-7">
             Entrenamientos personalizados para alcanzar{" "}
             <span className="text-rojo font-extrabold">tu mejor versión</span>.
           </p>
 
-          {/* Updated UL section */}
-          <ul className="space-y-2 lg:space-y-4 mt-4 flex flex-col items-center lg:items-start">
-            {[
-              "Planes online, Entrenamiento + alimentación y MindSet",
-              "Preparacion fisica y nutrición para deportes de combate",
-              "Clases presenciales 1 a 1",
-            ].map((item, index) => (
-              <li
-                key={index}
-                className="flex items-center text-white font-bold text-base lg:text-lg"
-              >
-                <svg
-                  className="w-5 h-5 lg:w-6 lg:h-6 mr-2 text-red-600"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M5 13l4 4L19 7"></path>
-                </svg>
-                {item}
+          <ul className="space-y-2 lg:space-y-4 mt-4 lg:mt-7 flex flex-col items-center lg:items-start w-full">
+            {features.map((item, index) => (
+              <li key={index} className="text-white font-bold text-base lg:text-lg w-full leading-relaxed">
+                <span className="text-rojo font-extrabold mr-2">•</span> {item}
               </li>
             ))}
           </ul>
 
-          {/* Botón que redirige a WhatsApp */}
-          <div className="mt-6 text-center lg:text-left">
+          <div className="mt-6 lg:mt-7 text-center lg:text-left">
             <Link
               href={`https://wa.me/5491150611441?text=Hola%20Fede,%20como%20estas?%20Queria%20consultarte%20a%20cerca%20de`}
               passHref
@@ -60,7 +47,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Image section for larger screens */}
       <div className="w-full flex justify-center lg:justify-center mt-8 lg:mt-0">
         <Image
           src={Fede}

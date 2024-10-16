@@ -14,14 +14,12 @@ export const FloatingNav = ({
   className,
 }: {
   navItems: {
-    name: string;
     link: string;
-    icon?: JSX.Element;
+    icon?: JSX.Element; // Asegúrate de que `icon` sea opcional
   }[];
   className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
-
   const [visible, setVisible] = useState(false);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
@@ -61,20 +59,20 @@ export const FloatingNav = ({
             duration: 0.2,
           }}
           className={cn(
-            "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent rounded-full shadow-md z-[5000] px-6 py-4 items-center justify-center space-x-6", // Ajuste del padding y spacing
+            "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent rounded-full shadow-md z-[5000] px-6 py-4 items-center justify-center space-x-6",
             "backdrop-blur-lg bg-bordo/25",
             className
           )}
         >
-          {navItems.map((navItem: any, idx: number) => (
+          {navItems.map((navItem, idx) => (
             <Link
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
-                "relative items-center flex text-xs text-white hover:text-neutral-300 font-bold" 
+                "relative items-center flex text-xs text-white hover:text-neutral-300 font-bold"
               )}
             >
-              <span className="block">{navItem.name}</span>
+              {navItem.icon} {/* Solo muestra el ícono */}
             </Link>
           ))}
         </motion.div>

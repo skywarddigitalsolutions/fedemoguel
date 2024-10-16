@@ -12,7 +12,7 @@ export const Stat = ({
     return (
       <div>
         <h3 className="text-4xl font-extrabold">
-          +
+          <span className="text-rojo font-extrabold">+</span>
           {unit === "k" ? (
             <NumberTicker value={Number(number)} decimalPlaces={2} />
           ) : (

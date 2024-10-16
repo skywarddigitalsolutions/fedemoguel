@@ -9,12 +9,12 @@ export default function Comunidad() {
       <SubtitleSections title={"Comunidad"} Icon={BicepsFlexed} />
       
       <div className="flex items-center gap-2 mb-4">
-        <TitleSections title={"Comunidad FedeMoguel"} />
+        <TitleSections title={"Comunidad Fede Moguel"} />
       </div>
       
       <p className="mb-6 text-lg lg:text-xl text-white w-full">
         Luego de más de 5 años de crear contenido de manera constante, logramos
-        construir una gran comunidad de gente que ama el entrenamiento.
+        construir una gran comunidad de <span className="text-rojo font-extrabold">gente que ama el entrenamiento</span>.
       </p>
 
       {/* Stats grid, adjusted for larger screens */}
