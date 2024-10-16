@@ -14,7 +14,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="lg:h-[70vh] flex flex-col lg:flex-row lg:items-start bg-background_color p-8 lg:p-16 gap-4">
+    <section className="lg:h-full flex flex-col lg:flex-row lg:items-start bg-background_color p-8 lg:p-16 gap-4">
       <div className="w-full space-y-6">
         <SubtitleSections title="Inicio" Icon={Home} />
 

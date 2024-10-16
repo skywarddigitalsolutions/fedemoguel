@@ -8,14 +8,14 @@ import Link from "next/link";
 export default function Planes() {
   const planes = [
     {
-      title: "Plan Fighter Elite",
-      description:
-        "Para deportistas de combate (Muay Thai, Boxeo, Bjj, MMA)\n Preparación física + Nutrición deportiva + Asesoramiento en corte de peso + seguimiento (100% online)",
-    },
-    {
       title: "Plan Platinum",
       description:
         "Para pérdida de grasa y/o ganancia de masa muscular\n Entrenamiento + Alimentación + Seguimiento",
+    },
+    {
+      title: "Plan Fighter Elite",
+      description:
+        "Para deportistas de combate (Muay Thai, Boxeo, Bjj, MMA)\n Preparación física + Nutrición deportiva + Asesoramiento en corte de peso + seguimiento (100% online)",
     },
     {
       title: "Plan Gold",
@@ -25,7 +25,7 @@ export default function Planes() {
 
   return (
     <div
-      className="relative lg:h-[90vh] flex items-center justify-center overflow-hidden"
+      className="relative lg:h-full flex items-center justify-center overflow-hidden"
       id="Kickboxing"
     >
       <video
@@ -43,10 +43,10 @@ export default function Planes() {
       <div className="absolute inset-0 bg-black opacity-70"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-white text-center p-8 lg:p-16 mt-10 lg:h-[80vh]">
+      <div className="relative z-10 text-white text-center p-8 lg:p-16 mt-10 lg:h-full">
         <SubtitleSections title={"Planes"} Icon={NotepadText} />
         <TitleSections
-          title={"¿Estas listo para realizar un entrenamiento de kickboxing?"}
+          title={"¿Listo para un entrenamiento ajustado a tus metas?"}
         />
         <p className="text-xl sm:text-2xl mb-8">
           Descubre cómo nuestro entrenamiento puede llevarte al siguiente nivel

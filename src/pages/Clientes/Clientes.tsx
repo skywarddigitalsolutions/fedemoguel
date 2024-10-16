@@ -35,27 +35,11 @@ const Clientes = () => {
           <ImageCarousel />
         </div>
 
-        {/* Testimonial Comparisons - visible on all screens */}
+        {/* Tercera Comparación */}
         <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
           <Compare
-            firstImage="/img/cambio3.webp"
-            secondImage="/img/cambio4.webp"
-            firstImageClassName="object-cover object-left-top"
-            secondImageClassname="object-cover object-left-top"
-            className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
-            slideMode="hover"
-          />
-          <p className="text-white font-medium md:text-left md:w-1/2">
-            "Nunca me había sentido tan bien. Mi energía y autoestima están por
-            las nubes desde que comencé con este entrenamiento." – Juan P.
-          </p>
-        </div>
-
-        {/* Repite la sección de testimonios como está */}
-        <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
-          <Compare
-            firstImage="/img/cambio5.webp"
-            secondImage="/img/cambio6.webp"
+            firstImage="/img/cambio13.webp"
+            secondImage="/img/cambio14.webp"
             firstImageClassName="object-cover object-left-top"
             secondImageClassname="object-cover object-left-top"
             className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
@@ -70,8 +54,40 @@ const Clientes = () => {
         {/* Tercera Comparación */}
         <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
           <Compare
-            firstImage="/img/cambio7.webp"
-            secondImage="/img/cambio8.webp"
+            firstImage="/img/cambio12.webp"
+            secondImage="/img/cambio11.webp"
+            firstImageClassName="object-cover object-left-top"
+            secondImageClassname="object-cover object-left-top"
+            className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
+            slideMode="hover"
+          />
+          <p className="text-white font-medium md:text-left md:w-1/2">
+            "Este programa cambió mi vida. No solo me veo mejor, también me
+            siento increíblemente fuerte y positivo." – Lucía M.
+          </p>
+        </div>
+
+        {/* Tercera Comparación */}
+        <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
+          <Compare
+            firstImage="/img/cambio9.webp"
+            secondImage="/img/cambio10.webp"
+            firstImageClassName="object-cover object-left-top"
+            secondImageClassname="object-cover object-left-top"
+            className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
+            slideMode="hover"
+          />
+          <p className="text-white font-medium md:text-left md:w-1/2">
+            "Este programa cambió mi vida. No solo me veo mejor, también me
+            siento increíblemente fuerte y positivo." – Lucía M.
+          </p>
+        </div>
+
+        {/* Repite la sección de testimonios como está */}
+        <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
+          <Compare
+            firstImage="/img/cambio5.webp"
+            secondImage="/img/cambio6.webp"
             firstImageClassName="object-cover object-left-top"
             secondImageClassname="object-cover object-left-top"
             className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
@@ -98,11 +114,27 @@ const Clientes = () => {
           </p>
         </div>
 
+        {/* Testimonial Comparisons - visible on all screens */}
+        <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
+          <Compare
+            firstImage="/img/cambio3.webp"
+            secondImage="/img/cambio4.webp"
+            firstImageClassName="object-cover object-left-top"
+            secondImageClassname="object-cover object-left-top"
+            className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
+            slideMode="hover"
+          />
+          <p className="text-white font-medium md:text-left md:w-1/2">
+            "Nunca me había sentido tan bien. Mi energía y autoestima están por
+            las nubes desde que comencé con este entrenamiento." – Juan P.
+          </p>
+        </div>
+
         {/* Tercera Comparación */}
         <div className="md:flex md:justify-center md:items-center md:gap-4 w-full">
           <Compare
-            firstImage="/img/cambio9.webp"
-            secondImage="/img/cambio10.webp"
+            firstImage="/img/cambio7.webp"
+            secondImage="/img/cambio8.webp"
             firstImageClassName="object-cover object-left-top"
             secondImageClassname="object-cover object-left-top"
             className="h-[500px] w-[20rem] md:h-[500px] md:w-[20rem] mb-3"
@@ -113,6 +145,7 @@ const Clientes = () => {
             siento increíblemente fuerte y positivo." – Lucía M.
           </p>
         </div>
+
       </div>
     </div>
   );
