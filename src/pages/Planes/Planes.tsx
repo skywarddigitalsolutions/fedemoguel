@@ -29,7 +29,7 @@ export default function Planes() {
       id="Kickboxing"
     >
       <video
-        className="absolute w-full h-full object-cover opacity-40"
+        className="absolute w-full h-full object-cover opacity-45"
         autoPlay
         loop
         muted
@@ -40,7 +40,7 @@ export default function Planes() {
       </video>
 
       {/* Dark overlay for video */}
-      <div className="absolute inset-0 bg-black opacity-70"></div>
+      <div className="absolute inset-0 bg-black opacity-0"></div>
 
       {/* Content */}
       <div className="relative z-10 text-white text-center p-8 lg:p-16 mt-10 lg:h-full">
