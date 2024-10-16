@@ -22,7 +22,7 @@ export default function Comunidad() {
         <Stat number="7.2" label="Seguidores en Instagram" unit="k" />
         <Stat number="100" label="Cambio físico asegurado" unit="%" />
         <Stat number="200" label="Moguel people inscriptos" unit="" />
-        <Stat number="2.13" label="Seguidores en YouTube" unit="k" />
+        <Stat number="2.35" label="Seguidores en YouTube" unit="k" />
       </div>
     </div>
   );
